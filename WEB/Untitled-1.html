@@ -7,6 +7,7 @@
                 height: 100px;
                 width: 100%;
                 text-align: center;
+                justify-content: center;
                 background: linear-gradient(#E6E6E6, #E6E6E6, #f5f5f5);
                 font-size: 25px;
                 
@@ -138,6 +139,38 @@
                 flex-direction: column;
                 width: 75%;
             }
+            .menu-elem{
+                text-align: center;
+                margin-right:10px; 
+            }
+            a {
+                outline: none;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 21px;
+                text-decoration: none;
+                padding: 2px 1px 0;
+            }
+            
+            a:link {
+                color: #000000;
+            }
+
+            a:visited {
+                color: #AAAAAA;
+            }
+
+            a:focus {
+                border-bottom: 1px solid;
+                background: #bae498;
+            }
+            a:hover {
+                border-bottom: 1px solid;
+                background: linear-gradient(180deg, rgba(210,210,210,1) 0%, rgba(215,215,215,1) 100%);
+            }
+            #CetrificationsItem{
+                color: black;
+                margin-top: 10px;
+            }
         </style>
     </head>
     <body>
@@ -146,18 +179,21 @@
                 <div class="header-text">
                     Моя персональная страница
                 </div>
-                <div class="container">
-                    <div>
-                        Главная
+                <div class="container" style="justify-content: center;">
+                    <div class="menu-elem">
+                        <a href="#info">Главная</a>
                     </div>
-                    <div>
-                        Обо мне
+                    <div class="menu-elem">
+                        <a href="#about">Обо мне</a>
                     </div>
-                    <div>
-                        Образование
+                    <div class="menu-elem">
+                        <a href="#edu">Образование</a>
                     </div>
-                    <div>
-                        Как я работаю
+                    <div class="menu-elem">
+                        <a href="#work">Как я работаю</a>
+                    </div>
+                    <div class="menu-elem">
+                        <a href="#skilsItem">Мои навыки</a>
                     </div>
                 </div>
             </div> 
@@ -279,10 +315,10 @@
                 <div class="sideinfo">
                     <h2>Достижения</h2>
                     <div id="CetrificationsItem">
-
+                        2022. Диплом 3 место. Региональный конкурс выпускных квалификационных работ в области IT-технологий. Выпускные квалификационные работы СПО
                     </div>
                     <div id="CetrificationsItem">
-                        
+                        2022. Участие в региональном туре по программированиею 1/8 ICPC 2022
                     </div>
                 </div>
             </div>
